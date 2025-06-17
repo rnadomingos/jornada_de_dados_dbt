@@ -1,4 +1,4 @@
--{{ config(materialized='table', schema='gold', alias='percentual_das_categoria') }}
+{{ config(materialized='table', schema='gold', alias='percentual_das_categoria') }}
 
 WITH somente_categoria AS (
     SELECT * 
