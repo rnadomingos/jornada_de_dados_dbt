@@ -1,0 +1,7 @@
+sources:
+  - name: bronze
+    database: dbname_cajc
+    schema: bronze
+    tables:
+      - name: google_sheets_pesquisa
+        description: "Dados importados do Google Sheets."
