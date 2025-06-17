@@ -1,7 +1,7 @@
 
 WITH filtered as (
 	SELECT 
-		COALESCE(Categoria, 'Montadora') as categoria
+		COALESCE(Categoria, 'Montadora') as categoria,
 		COUNT(*) as qtde
 	FROM {{ source('bronze', 'google_sheets_pesquisa')}} -- "google_sheets_Worksheet" gsw
 	GROUP BY "Categoria" 
